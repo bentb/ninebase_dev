@@ -4,7 +4,8 @@
 
 import streamlit as st
 from nbformat import reads
-from nbconvert import HTMLExporter
+from nbconvert import NotebookNode
+from streamlit_ace import st_ace
 
 def batting_page():
     st.write('This is the batting page.')
@@ -17,15 +18,7 @@ def batting_page():
     # Parse the notebook content
     notebook_node = reads(notebook_content, as_version=4)
 
-    # Convert the notebook content to HTML
-    exporter = HTMLExporter()
-    html_content, _ = exporter.from_notebook_node(notebook_node)
-
-    # Display the rendered notebook content
-    st.components.v1.html(html_content, width=800, height=600)
-
-try:
-    batting_page()
-except Exception as e:
-    st.error(f"An error occurred: {e}")
+    # Display the notebook content with code cells and outputs
+    for cell in notebook_node['cells']:
+        if cell['cell_type'] == 'code':
 
