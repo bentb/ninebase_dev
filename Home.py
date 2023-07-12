@@ -30,7 +30,7 @@ st.set_page_config(
 
 
 # Import the page modules
-from player.batting import batting_page
+from player.player_batting_season import batting_page
 #from player.pitching import pitching_page
 #from player.fielding import fielding_page
 #from references.data_dictionary import data_dictionary_page
