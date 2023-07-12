@@ -3,7 +3,7 @@
 
 # # ninebase - Home Page
 
-# In[1]:
+# In[2]:
 
 
 import streamlit as st
@@ -20,7 +20,7 @@ st.set_page_config(
 )
 
 
-# In[ ]:
+# In[3]:
 
 
 ### Menu Structure
@@ -29,13 +29,27 @@ st.set_page_config(
 # In[4]:
 
 
+st.title(" Multi-Page Streamlit Web App")
+st.header("")
 
 
-
-# In[2]:
-
+# In[ ]:
 
 
+st.sidebar.success
+
+
+# In[5]:
+
+
+st.markdown(
+    """
+    Hi there
+    - Bullet 1
+    - Bullet 2
+    - Bullet 3
+"""
+)
 
 
 # In[ ]:
