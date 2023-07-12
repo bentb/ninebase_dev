@@ -29,26 +29,13 @@ st.set_page_config(
 # In[4]:
 
 
-# Import the page modules
-from player.player_batting_season import batting_page
-#from player.pitching import pitching_page
-#from player.fielding import fielding_page
-#from references.data_dictionary import data_dictionary_page
-#from references.box_plots import box_plots_page
+
 
 
 # In[2]:
 
 
-# Define the sections
-st.sidebar.title('Player')
-st.sidebar.button('Batting', on_click=batting_page)
-#st.sidebar.button('Pitching', on_click=pitching_page)
-#st.sidebar.button('Fielding', on_click=fielding_page)
 
-#st.sidebar.title('References')
-#st.sidebar.button('Data Dictionary', on_click=data_dictionary_page)
-#st.sidebar.button('Box Plots', on_click=box_plots_page)
 
 
 # In[ ]:
