@@ -20,38 +20,30 @@ st.set_page_config(
 )
 
 
-# In[ ]:
+# def add_logo():
+#     st.markdown(
+#         """
+#         <style>
+#             [data-testid="stSidebarNav"] {
+#                 background-image: url(https://i.imgur.com/sLSMBYJ.png);
+#                 background-repeat: no-repeat;
+#                 padding-top: 40px;
+#                 background-position: 20px 20px;
+#             }
+#             [data-testid="stSidebarNav"]::before {
+#                 content: "Navigation Menu";
+#                 margin-left: 20px;
+#                 margin-top: 20px;
+#                 font-size: 26px;
+#                 position: relative;
+#                 top: 100px;
+#             }
+#         </style>
+#         """,
+#         unsafe_allow_html=True,
+#     )
 
-
-def add_logo():
-    st.markdown(
-        """
-        <style>
-            [data-testid="stSidebarNav"] {
-                background-image: url(https://i.imgur.com/sLSMBYJ.png);
-                background-repeat: no-repeat;
-                padding-top: 40px;
-                background-position: 20px 20px;
-            }
-            [data-testid="stSidebarNav"]::before {
-                content: "Navigation Menu";
-                margin-left: 20px;
-                margin-top: 20px;
-                font-size: 26px;
-                position: relative;
-                top: 100px;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-
-
-# In[ ]:
-
-
-add_logo()
-
+# add_logo()
 
 # In[ ]:
 
@@ -75,39 +67,35 @@ def countdown_to_playoffs():
     st.markdown(countdown_style, unsafe_allow_html=True)
 
 
-# In[ ]:
-
-
-st.markdown(
-    """
-    <style>
-        body {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: flex-start;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .title {
-            font-size: 46px;
-            font-weight: bold;
-            margin-bottom: 6px;
-            font-family: Lato, sans-serif;
-            color: #164f5e;
-        }
-
-        .description {
-            font-size: 24px;
-            margin-bottom: 5px;
-            font-family: Lato, sans-serif;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
+# st.markdown(
+#     """
+#     <style>
+#         body {
+#             display: flex;
+#             flex-direction: row;
+#             justify-content: center;
+#             align-items: flex-start;
+#             height: 100vh;
+#             margin: 0;
+#         }
+# 
+#         .title {
+#             font-size: 46px;
+#             font-weight: bold;
+#             margin-bottom: 6px;
+#             font-family: Lato, sans-serif;
+#             color: #164f5e;
+#         }
+# 
+#         .description {
+#             font-size: 24px;
+#             margin-bottom: 5px;
+#             font-family: Lato, sans-serif;
+#         }
+#     </style>
+#     """,
+#     unsafe_allow_html=True
+# )
 
 # In[9]:
 
