@@ -21,4 +21,19 @@ def batting_page():
     # Display the notebook content with code cells and outputs
     for cell in notebook_node['cells']:
         if cell['cell_type'] == 'code':
+            code = ''.join(cell['source'])
+            outputs = [output for output in cell.get('outputs', []) if output.get('output_type') == 'display_data']
+            st_ace(code, language='python', readonly=True, show_gutter=False, show_print_margin=False)
+            for output in outputs:
+                if 'data' in output:
+                    for key, value in output['data'].items():
+                        if key.startswith('image'):
+                            st.image(value)
+                        else:
+                            st.write(value)
+
+try:
+    batting_page()
+except Exception as e:
+    st.error(f"An error occurred: {e}")
 
