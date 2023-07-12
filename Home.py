@@ -26,7 +26,7 @@ st.set_page_config(
 ### Menu Structure
 
 
-# In[ ]:
+# In[4]:
 
 
 # Import the page modules
@@ -43,7 +43,7 @@ from player.player_batting_season import batting_page
 # Define the sections
 st.sidebar.title('Player')
 st.sidebar.button('Batting', on_click=batting_page)
-st.sidebar.button('Pitching', on_click=pitching_page)
+#st.sidebar.button('Pitching', on_click=pitching_page)
 #st.sidebar.button('Fielding', on_click=fielding_page)
 
 #st.sidebar.title('References')
