@@ -5,6 +5,7 @@
 import streamlit as st
 import json
 from nbformat import reads, NotebookNode
+from nbconvert import HTMLExporter
 
 def batting_page():
     st.write('This is the batting page.')
@@ -14,10 +15,16 @@ def batting_page():
     with open(notebook_filename, 'r') as f:
         notebook_content = json.load(f)
 
-    st.write(notebook_content)  # Print the notebook content
+    # Convert the notebook content to HTML
+    exporter = HTMLExporter()
+    html_content, _ = exporter.from_notebook_node(notebook_content)
+
+    # Display the rendered notebook content
+    st.components.v1.html(html_content, width=800, height=600)
 
 try:
     batting_page()
 except Exception as e:
     st.error(f"An error occurred: {e}")
+
 
