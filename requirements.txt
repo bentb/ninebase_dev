@@ -79,3 +79,4 @@ patsy==0.5.3
 statsmodels==0.14.0
 st-pages==0.4.3
 nbconvert
+nbformat
