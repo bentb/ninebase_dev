@@ -51,30 +51,38 @@ st.set_page_config(
 )
 
 
-# def add_logo():
-#     st.markdown(
-#         """
-#         <style>
-#             [data-testid="stSidebarNav"] {
-#                 background-image: url(https://i.imgur.com/sLSMBYJ.png);
-#                 background-repeat: no-repeat;
-#                 padding-top: 40px;
-#                 background-position: 20px 20px;
-#             }
-#             [data-testid="stSidebarNav"]::before {
-#                 content: "Navigation Menu";
-#                 margin-left: 20px;
-#                 margin-top: 20px;
-#                 font-size: 26px;
-#                 position: relative;
-#                 top: 100px;
-#             }
-#         </style>
-#         """,
-#         unsafe_allow_html=True,
-#     )
+# In[ ]:
 
-# add_logo()
+
+def add_logo():
+    st.markdown(
+        """
+        <style>
+            [data-testid="stSidebarNav"] {
+                background-image: url(https://i.imgur.com/sLSMBYJ.png);
+                background-repeat: no-repeat;
+                padding-top: 40px;
+                background-position: 20px 20px;
+            }
+            [data-testid="stSidebarNav"]::before {
+                content: "Navigation Menu";
+                margin-left: 20px;
+                margin-top: 20px;
+                font-size: 26px;
+                position: relative;
+                top: 100px;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+# In[ ]:
+
+
+add_logo()
+
 
 # ## Load Data
 
