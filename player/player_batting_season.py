@@ -5,7 +5,7 @@
 import streamlit as st
 import json
 from nbformat import reads, NotebookNode
-from nbconvert import HTMLExporter
+from nbconvert import MarkdownExporter
 
 def batting_page():
     st.write('This is the batting page.')
@@ -15,12 +15,12 @@ def batting_page():
     with open(notebook_filename, 'r') as f:
         notebook_content = json.load(f)
 
-    # Convert the notebook content to HTML
-    exporter = HTMLExporter()
-    html_content, _ = exporter.from_notebook_node(notebook_content)
+    # Convert the notebook content to Markdown
+    exporter = MarkdownExporter()
+    markdown_content, _ = exporter.from_notebook_node(notebook_content)
 
     # Display the rendered notebook content
-    st.components.v1.html(html_content, width=800, height=600)
+    st.markdown(markdown_content)
 
 try:
     batting_page()
