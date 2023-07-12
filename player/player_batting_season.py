@@ -10,7 +10,7 @@ def batting_page():
     st.write('This is the batting page.')
 
     # Load the Jupyter notebook file
-    notebook_filename = 'path/to/player_batting_season.ipynb'  # Replace with the actual file path
+    notebook_filename = 'data_analyze/player_batting_season.ipynb'  # Replace with the actual file path
     with open(notebook_filename, 'r') as f:
         notebook_content = json.load(f)
 
