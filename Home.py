@@ -28,18 +28,16 @@ from streamlit import beta_container
 
 def create_sidebar_menu():
     st.sidebar.title("Menu")
-
-    with container():
+    
+    with st.sidebar.beta_container():
         st.sidebar.subheader("Section 1")
         st.sidebar.write("Page 1")
         st.sidebar.write("Page 2")
-
-    with container():
+    
+    with st.sidebar.beta_container():
         st.sidebar.subheader("Section 2")
         st.sidebar.write("Page 3")
         st.sidebar.write("Page 4")
-
-create_sidebar_menu()
 
 
 # In[4]:
