@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # ninebase - Home Page
+# # ninebase Home Page
 
 # In[2]:
 
@@ -31,6 +31,21 @@ st.set_page_config(
 
 st.title(" Multi-Page Streamlit Web App")
 st.header("")
+
+
+# In[ ]:
+
+
+from pages import player_batting_season
+
+
+# In[ ]:
+
+
+pages = {
+    "Home": Home,
+    "Player Batting Season": player_batting_season
+}
 
 
 # In[ ]:
