@@ -36,16 +36,13 @@ st.header("")
 # In[1]:
 
 
-from pages.player_batting_season import app
+
 
 
 # In[ ]:
 
 
-pages = {
-    "Home": Home,
-    "Player Batting Season": player_batting_season
-}
+
 
 
 # In[ ]:

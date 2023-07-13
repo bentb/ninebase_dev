@@ -61,7 +61,6 @@ wrapt==1.15.0
 seaborn==0.12.2
 python-decouple==3.8
 streamlit-aggrid==0.3.4.post3
-st-pages==0.4.3
 faker==18.13.0
 favicon==0.7.0
 htbuilder==0.6.1
@@ -77,6 +76,5 @@ streamlit-faker==0.0.2
 streamlit-keyup==0.2.0
 patsy==0.5.3
 statsmodels==0.14.0
-st-pages==0.4.3
 nbconvert
 nbformat
