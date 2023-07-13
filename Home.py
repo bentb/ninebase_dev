@@ -33,10 +33,10 @@ st.title(" Multi-Page Streamlit Web App")
 st.header("")
 
 
-# In[ ]:
+# In[1]:
 
 
-from pages.player_batting_season import app
+from .pages.player_batting_season import app
 
 
 # In[ ]:
