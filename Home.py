@@ -36,7 +36,7 @@ st.header("")
 # In[ ]:
 
 
-from pages import player_batting_season
+from pages.player_batting_season import app as player_batting_season
 
 
 # In[ ]:
