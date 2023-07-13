@@ -24,6 +24,7 @@ st.set_page_config(
 
 
 # Navigation Menu
+from streamlit import beta_container
 
 def create_sidebar_menu():
     st.sidebar.title("Menu")
