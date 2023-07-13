@@ -30,12 +30,12 @@ def create_sidebar_menu():
     st.sidebar.title("Menu")
     
     st.sidebar.header("Section 1")
-    st.sidebar.write("Page 1")
-    st.sidebar.write("Page 2")
+    st.sidebar.markdown("- Page 1")
+    st.sidebar.markdown("- Page 2")
     
     st.sidebar.header("Section 2")
-    st.sidebar.write("Page 3")
-    st.sidebar.write("Page 4")
+    st.sidebar.markdown("- Page 3")
+    st.sidebar.markdown("- Page 4")
 
 
 # In[ ]:
