@@ -51,30 +51,6 @@ st.set_page_config(
 )
 
 
-# In[4]:
-
-
-### Menu Structure
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
 # In[5]:
 
 
@@ -662,30 +638,4 @@ with img_col2:
 
 with img_col3:
     pass
-
-
-# In[ ]:
-
-
-
-
-
-# ### Playground
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 

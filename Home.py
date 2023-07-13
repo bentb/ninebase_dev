@@ -20,10 +20,25 @@ st.set_page_config(
 )
 
 
-# In[3]:
+# In[2]:
 
 
-### Menu Structure
+# Navigation Menu
+
+def create_sidebar_menu():
+    st.sidebar.title("Menu")
+
+    with container():
+        st.sidebar.subheader("Section 1")
+        st.sidebar.write("Page 1")
+        st.sidebar.write("Page 2")
+
+    with container():
+        st.sidebar.subheader("Section 2")
+        st.sidebar.write("Page 3")
+        st.sidebar.write("Page 4")
+
+create_sidebar_menu()
 
 
 # In[4]:
@@ -31,18 +46,6 @@ st.set_page_config(
 
 st.title(" Multi-Page Streamlit Web App")
 st.header("")
-
-
-# In[1]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
 
 # In[ ]:
@@ -62,12 +65,6 @@ st.markdown(
     - Bullet 3
 """
 )
-
-
-# In[ ]:
-
-
-
 
 
 # In[ ]:
