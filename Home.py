@@ -36,7 +36,7 @@ st.header("")
 # In[ ]:
 
 
-st.sidebar.success
+st.sidebar.success()
 
 
 # In[5]:
