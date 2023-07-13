@@ -27,13 +27,13 @@ st.set_page_config(
 def create_sidebar_menu():
     st.sidebar.title("Menu")
     
-    st.sidebar.header("Section 1")
-    st.sidebar.markdown("- Page 1")
-    st.sidebar.markdown("- Page 2")
+    st.sidebar.header("Player")
+    st.sidebar.markdown("- [Batting](https://ninebase-dev.streamlit.app/player_batting_season")
+    st.sidebar.markdown("- [Page 2](page2)")
     
     st.sidebar.header("Section 2")
-    st.sidebar.markdown("- Page 3")
-    st.sidebar.markdown("- Page 4")
+    st.sidebar.markdown("- [Page 3](page3)")
+    st.sidebar.markdown("- [Page 4](page4)")
 
 
 # In[ ]:
